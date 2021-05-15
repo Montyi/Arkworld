@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+ 
+  <SoundDef>
+    <defName>LaserShot_Light</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/LaserShot_Light</clipFolderPath>
+          </li>
+        </grains>  
+        <volumeRange>
+          <min>35</min>        
+          <max>35</max>
+        </volumeRange>    
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>LaserShot_Rifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/LaserShot_Rifle</clipFolderPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.83</min>        
+          <max>1.15</max>
+        </pitchRange>
+        <volumeRange>
+          <min>35</min>        
+          <max>35</max>
+        </volumeRange>    
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

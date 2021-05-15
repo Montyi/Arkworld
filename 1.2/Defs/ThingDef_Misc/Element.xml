@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ============== Element =================== -->
+
+<ThingDef ParentName="ResourceBase">
+    <defName>AW_Element</defName>
+    <label>Element</label>
+    <description>Temp</description>
+    <graphicData>
+      <texPath>Things/Item/Element</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>15</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+	<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+<!-- ============== Element Dust =================== -->
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>AW_ElementDust</defName>
+    <label>Element Dust</label>
+    <description>Temp</description>
+    <graphicData>
+      <texPath>Things/Item/Element_Dust</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+	<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<effectWorking>Cooking</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workAmount>150</workAmount>
+			<targetCountAdjustment>1</targetCountAdjustment>
+			<productCount>10</productCount>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li>FabricationBench</li>
+			</recipeUsers>
+	</recipeMaker>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>200</MarketValue>
+      <Mass>0.01</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+		<costList>
+			<AW_Element>1</AW_Element>
+		</costList>
+    <intricate>true</intricate>
+	<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+ </Defs>
